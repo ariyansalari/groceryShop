@@ -59,6 +59,26 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+  var swiper = new Swiper(".review-slider", {
+    loop:true,
+    spaceBetween: 10,
+  autoplay:{
+    delay:6500,
+    disableOnInteraction:false
+  },
+  centeredSlides:true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
 // window.onclick=()=>{
 //     navBar.classList.remove('active')
 //     shoppinCart.classList.remove('active')

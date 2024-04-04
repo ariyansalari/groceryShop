@@ -376,6 +376,8 @@ section {
 }
 .products .product-slider .box img {
   height: 20rem;
+  width: 20rem;
+  object-fit: cover;
 }
 .products .product-slider .box h3 {
   font-size: 2.5rem;
@@ -406,25 +408,70 @@ section {
   text-align: center;
 }
 
-.categories .box-container .box:hover{
-   outline-offset: 0rem;
-   outline: var(--ouline-hover);
-   border: 1px solid var(--black);
-      }
-      .categories .box-container .box img{
-       margin: 1rem 0;
-       height: 18rem;
-       width: 18rem;
-       object-fit: cover;
-       border-radius: .5rem;
-           }
-           .categories .box-container .box h3{
-        font-size: 2rem;
-        color: var(--black);
-        line-height: 1.8;
-                }
-                .categories .box-container .box p{
-                    font-size: 1.7rem;
-                    color: var(--light-color);
-                    padding: 1rem;
-                            }
+.categories .box-container .box:hover {
+  outline-offset: 0rem;
+  outline: var(--ouline-hover);
+  border: 1px solid var(--black);
+}
+.categories .box-container .box img {
+  margin: 1rem 0;
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.categories .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+.categories .box-container .box p {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding: 1rem;
+}
+.review .review-slider {
+    padding: 1rem;
+
+}
+.review .review-slider .box{
+    border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem 2rem;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  transition: 0.2s linear;
+  box-shadow: var(--box-shadow);
+    
+}
+.review .review-slider .box:hover{
+    outline-offset: 0rem;
+    outline: var(--ouline-hover);
+    border: 1px solid var(--black);
+    
+}
+.review .review-slider .box img{
+  height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    object-fit: cover;
+    outline: var(--orange);
+    outline-width: 7px;
+    outline-color: var(--orange);
+    outline-style: double;
+}
+.review .review-slider .box p{
+ padding: 1rem 0;
+ line-height: 1.8;
+ color: var(--light-color);
+ font-size: 1.5rem;
+  }
+  .review .review-slider .box h3{
+font-size: 2.2rem;
+color: var(--black);
+padding-bottom: .5rem;
+     }
+     .review .review-slider .stars i{
+        font-size: 1.7rem;
+        color: var(--orange);
+             }
