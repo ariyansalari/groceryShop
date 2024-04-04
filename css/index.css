@@ -293,16 +293,20 @@ section {
   .heading {
     font-size: 2.5rem;
   }
+  .footer{
+    text-align: center;
+  }
 }
 .home {
+    height: 50rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("../images/groceryShop.avif");
+  background-size: cover;
   background-position: center;
   padding-top: 17rem;
   padding-top: 10rem;
-  background-position-y: 90deg;
 }
 .home .content {
   text-align: center;
@@ -474,7 +478,7 @@ section {
 }
 .blogs .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
 }
 .blogs .box-container .box {
@@ -523,3 +527,91 @@ padding: .5rem 0;
     font-size: 1.5rem;
     padding: .5rem 0;
       }
+
+      .footer{
+        background-color: #fff;
+      }
+      .footer .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      .footer .box-container .box h3{ 
+     font-size: 2.5rem;
+     color: var(--black);
+     padding: 1rem 0;
+      }
+      .footer .box-container .box h3 i{ 
+    color: var(--orange);
+         }
+         .footer .box-container .box .links{ 
+           display: block;
+           font-size: 1.5rem;
+           color: var(--light-color);
+           padding: 1rem 0;
+                 }
+                 .footer .box-container .box .links i{ 
+                 color: var(--orange);
+                 padding-right: .5rem;
+                          }
+                          .footer .box-container .box .links:hover i{ 
+                       padding-right: 2rem;
+                                     }
+                 .footer .box-container .box p{ 
+                    line-height: 1.8;
+                    font-size: 1.5rem;
+                    color: var(--light-color);
+                    padding: 1rem 0;
+                          }
+                          .footer .box-container .box .share {
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                       gap: 1rem;
+                       margin-bottom: 1rem;
+
+                          } 
+                          .footer .box-container .box .share a{ 
+                       height: 4rem ;
+                       width: 4rem;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                       line-height: 4rem;
+                       border-radius: .5rem;
+                       font-size: 2rem;
+                       color: var(--black);
+                       background: #eee;
+                       text-align: center;
+                                  }
+                                  .footer .box-container .box .share a:hover { 
+                            background: var(--orange);
+                            color: #fff;
+                                               }
+                                               .footer .box-container .box .share a:hover i{ 
+                                                color: #fff;
+                                                                   }
+                                               .footer .box-container .box .email {
+                                                width: 100%;
+                                                margin: .7rem 0;
+                                                padding: 1rem;
+                                                border-radius: .5rem;
+                                                background: #eee;
+                                                font-size: 1.6rem;
+                                                color: var(--black);
+                                                text-transform: none;
+                                               }
+                                      
+                                               .footer .credit{
+                                                text-align: center;
+                                                mask-image: 1rem;
+                                                padding: 1rem;
+                                                padding-top: 2.5rem;
+                                                font-size: 2rem;
+                                                color: var(--black);
+                                                border-top: var(--border);
+                                               }
+                                               .footer .credit span{
+                                            color: var(--orange);
+                                               }
