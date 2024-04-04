@@ -28,6 +28,9 @@ html {
 body {
   background: #eee;
 }
+main{
+    padding:2rem 9%;
+}
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -242,6 +245,9 @@ transition: .4s linear;
         .header{
             padding: 2rem;
         }
+        main{
+            padding:2rem
+        }
     }
     @media (max-width:768px) {
         #menu-btn{
@@ -270,4 +276,31 @@ transition: .4s linear;
         html{
             font-size: 50%;
         }
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url('../images/groceryShop.avif');
+        background-position: center;
+        padding-top: 17rem;
+        padding-top: 10rem;
+        background-position-y: 90deg;
+    }
+    .home .content {
+        text-align: center;
+        width: 60rem;
+    }
+    .home .content h3{
+        color: var(--black);
+        font-size:3rem ;
+    }
+    .home .content h3 span{
+  color: var(--orange);
+    }
+    .home .content p{
+        color: var(--light-color);
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        line-height: 1.8;
     }
